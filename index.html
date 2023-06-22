@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Setting the viewport to make the site responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Ensuring the site is displayed in edge mode on IE -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calculator</title>
+  <!-- Linking the stylesheet -->
+  <link href="styles.css" rel="stylesheet">
+  <!-- Script is loaded with the defer attribute, which will ensure that it's executed after the page is parsed -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- A grid is used to organize the calculator's buttons and display -->
+  <div class="calculator-grid">
+    <!-- The calculator's display -->
+    <div class="output">
+      <!-- The previous operand will be displayed here -->
+      <div data-previous-operand class="previous-operand"></div>
+      <!-- The current operand will be displayed here -->
+      <div data-current-operand class="current-operand"></div>
+    </div>
+    <!-- Calculator's buttons -->
+    <!-- The AC button will clear all the calculator's data -->
+    <button data-all-clear class="span-two">AC</button>
+    <!-- The DEL button will delete the last entered digit or point -->
+    <button data-delete>DEL</button>
+    <!-- Operation buttons -->
+    <button data-operation>÷</button>
+    <!-- Number buttons -->
+    <button data-number>1</button>
+    <button data-number>2</button>
+    <button data-number>3</button>
+    <!-- Operation buttons -->
+    <button data-operation>*</button>
+    <!-- Number buttons -->
+    <button data-number>4</button>
+    <button data-number>5</button>
+    <button data-number>6</button>
+    <!-- Operation buttons -->
+    <button data-operation>+</button>
+    <!-- Number buttons -->
+    <button data-number>7</button>
+    <button data-number>8</button>
+    <button data-number>9</button>
+    <!-- Operation buttons -->
+    <button data-operation>-</button>
+    <!-- The point button will add a decimal point to the current operand -->
+    <button data-number>.</button>
+    <!-- The 0 button -->
+    <button data-number>0</button>
+    <!-- The equals button will calculate the result of the operation -->
+    <button data-equals class="span-two">=</button>
+  </div>
+</body>
+</html>
